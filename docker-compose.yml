@@ -1,0 +1,5 @@
+services:
+ webserver: 
+  image: ghcr.io/develz12/nginx-julang
+  ports: 
+   - "8080:80"
