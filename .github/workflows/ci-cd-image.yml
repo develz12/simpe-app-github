@@ -36,7 +36,7 @@ jobs:
         run: echo "${{ secrets.TOKEN_DVLZ3 }}" | docker login ghcr.io -u develz --password-stdin
 
       - name: Stop and remove existing container
-        run: docker-compose down --rmi all
+        run: docker compose down --rmi all
 
       - name: Start container
         run: docker-compose up -d
